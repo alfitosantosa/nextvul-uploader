@@ -32,7 +32,7 @@ export default function Home() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("http://202.10.47.75:6969/api/upload", {
+      const res = await fetch(`https://file.pasarjaya.cloud/api/upload`, {
         method: "POST",
         body: formData,
       });
